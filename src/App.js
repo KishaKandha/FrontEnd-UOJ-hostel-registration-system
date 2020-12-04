@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Navbar,  NavbarBrand } from 'reactstrap';
 import  Main from  './components/MainComponent';
 import './App.css';
 
@@ -11,8 +10,10 @@ class App extends Component {
     this.state = {
       dishes: DISHES
     };
+
+
   } ----Everything is included in MainComponent
-  
+  import { Navbar,  NavbarBrand } from 'reactstrap';
   
     <Navbar dark color="primary">
       <div className="container">
