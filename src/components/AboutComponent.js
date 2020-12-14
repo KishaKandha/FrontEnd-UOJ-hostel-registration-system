@@ -3,23 +3,6 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 function About(props) {
-
-    /* const menu = this.state.dishes.map((dish) => {
-            return (
-              <div key={dish.id} className="col-12 mt-5">
-                <Media tag="li">
-                  <Media left middle>
-                      <Media object src={dish.image} alt={dish.name} />
-                  </Media>
-                  <Media body className="ml-5">
-                    <Media heading>{dish.name}</Media>
-                    <p>{dish.description}</p>
-                  </Media>
-                </Media>
-              </div>
-            );
-        });*/
-
     const RenderLeader = props.leaders.map((leader) => {
         return (
             <div key={leader.id} className="col-12 mt-2">
