@@ -10,18 +10,18 @@ import {
 const items = [
   {
     src :'assets/images/img1.png',
-    altText: 'Student Welfare Branch',
-    caption: 'University of Jaffna'
+    altText: 'UOJ',
+    caption: 'UOJ'
   },
   {
     src :'assets/images/img2.png',
-    altText: 'Student Welfare Branch',
-    caption: 'University of Jaffna'
+    altText: 'UOJ',
+    caption: 'UOJ'
   },
   {
     src :'assets/images/img3.jpg',
-    altText: 'Student Welfare Branch',
-    caption: 'University of Jaffna'
+    altText: 'UOJ',
+    caption: 'UOJ'
   }
 ];
 
@@ -56,7 +56,7 @@ const Carouselcom = (props) => {
         key={item.src}
       >
         <img  className="d-block w-100" src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption />
       </CarouselItem>
       
     );
