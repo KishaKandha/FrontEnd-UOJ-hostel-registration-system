@@ -8,14 +8,16 @@ class Home extends Component {
 
   render() {
    return(
+     
     <div className="container">
       <div className="row ">
-        <div className="col">
-           
+        <div className="col-12 col-md-10 offset-1">
+        <hr />
            < Carouselcom />
           
         </div>
       </div>
+      <hr />
         <div className="row">
            <div className="col-12 col-md-4 offset-1 ">  
            <img src='assets/images/hostel.jpg'     alt='hostel'  /> 
