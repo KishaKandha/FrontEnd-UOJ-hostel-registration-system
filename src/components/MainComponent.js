@@ -16,11 +16,7 @@ class Main  extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
-      comments : COMMENTS,
-      staffs : staffs,
-     
- 
+      staffs : staffs
     };
   }
 
