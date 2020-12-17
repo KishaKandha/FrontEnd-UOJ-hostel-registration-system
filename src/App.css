@@ -33,13 +33,12 @@ address{
 }
 
 
-.Carousel {
+.carousel {
    margin:2px auto; }
-    .Carousel .Carousel-item {
-      height: 200px; }
-      .Carousel .Carousel-item img {
-        position: absolute;
-        top: 20px;
-        min-height: 200px;
-      
+    .carousel .carousel-item {
+     }
+      .carousel .carousel-item img {
+          height: 100% !important;
+      object-fit: contain;
+      display: none;
     }
