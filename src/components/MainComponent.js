@@ -7,7 +7,6 @@ import Contact from './ContactComponent';
 import Footer from './FooterComponent';
 import Location from './LocationComponent';
 import { staffs } from '../shared/staffs';
-import { COMMENTS } from '../shared/comments';
 import { Switch, Route, Redirect } from 'react-router-dom';
 /* .. ------> go up one level src  */
 /*---Container */
