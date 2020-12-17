@@ -3,17 +3,17 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 function About(props) {
-    const RenderLeader = props.leaders.map((leader) => {
+    const RenderStaff = props.staffs.map((staff) => {
         return (
-            <div key={leader.id} className="col-12 mt-2">
+            <div key={staff.id} className="col-12 mt-2">
                 <Media tag="li">
                   <Media left middle>
-                      <Media object src={leader.image} alt={leader.name} />
+                      <Media object src={staff.image} alt={staff.name}  className="img-fluid rounded-circle"  height="50" width="50"  />
                   </Media>
                   <Media body className="ml-5">
-                    <Media heading>{leader.name}</Media>
-                    <p>{leader.designation}</p>
-                    <p>{leader.description}</p>
+                    <Media heading>{staff.name}</Media>
+                    <p>{staff.designation}</p>
+                    <p>{staff.description}</p>
                   </Media>
                 </Media>
               </div>
@@ -35,48 +35,37 @@ function About(props) {
             <div className="row row-content">
                 <div className="col-12 col-md-6">
                     <h2>Our History</h2>
-                    <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                    <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+                    <p>Started in 2000.... //History</p>
+                    <p>Student welfare  branch maintains 17 hostels for the undergraduate students in the following locations. Students from the families in the lower-income group and from distant residences are given preference. Rs.XXXX is charged as the hostel fee for an academic year and Rs.xxxx is charged as a hostel admission fee. The warden is the senior member of the Academic Staff and he/she is responsible for the disciplinary matters in hostels under the guidance and control of the Vice-Chancellor. The Sub – Warden is a resident fulltime sub-warden resides in each hostel.</p>
                 </div>
-                <div className="col-12 col-md-5">
+                <div className="col-12 col-md-6">
                     <Card>
                         <CardHeader className="bg-primary text-white">Facts At a Glance</CardHeader>
                         <CardBody>
                             <dl className="row p-1">
                                 <dt className="col-6">Started</dt>
-                                <dd className="col-6">3 Feb. 2013</dd>
-                                <dt className="col-6">Major Stake Holder</dt>
-                                <dd className="col-6">HK Fine Foods Inc.</dd>
-                                <dt className="col-6">Last Year's Turnover</dt>
-                                <dd className="col-6">$1,250,375</dd>
-                                <dt className="col-6">Employees</dt>
-                                <dd className="col-6">40</dd>
+                                <dd className="col-6">ddmmyyyy</dd>
+                                <dt className="col-6">Located in </dt>
+                                <dd className="col-6">Jaffna</dd>
+                                <dt className="col-6">University Owned Hostels</dt>
+                                <dd className="col-6">17</dd>
+                                <dt className="col-6">Wardens & Sub Wardens</dt>
+                                <dd className="col-6">30</dd>
                             </dl>
                         </CardBody>
                     </Card>
                 </div>
                 <div className="col-12">
-                    <Card>
-                        <CardBody className="bg-faded">
-                            <blockquote className="blockquote">
-                                <p className="mb-0">You better cut the pizza in four pieces because
-                                    I'm not hungry enough to eat six.</p>
-                                <footer className="blockquote-footer">Yogi Berra,
-                                <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
-                                    P. Pepe, Diversion Books, 2014</cite>
-                                </footer>
-                            </blockquote>
-                        </CardBody>
-                    </Card>
+                    
                 </div>
             </div>
             <div className="row row-content">
                 <div className="col-12">
-                    <h2>Corporate Leadership</h2>
+                    <h2>Administrators & Staff </h2>
                 </div>
                 <div className="col-12">
                     <Media list>
-                        {RenderLeader}
+                        {RenderStaff}
                     </Media>
                 </div>
             </div>

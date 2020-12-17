@@ -101,18 +101,18 @@ class Contact extends Component {
                 <h3>Location Information</h3>
                 </div>
                 <div className="col-12 col-sm-4 offset-sm-1">
-                        <h5>Our Address</h5>
+                        <h5>Address</h5>
                         <address>
-                        121, Clear Water Bay Road<br />
-                        Clear Water Bay, Kowloon<br />
-                        HONG KONG<br />
-                        <i className="fa fa-phone"></i>: +852 1234 5678<br />
-                        <i className="fa fa-fax"></i>: +852 8765 4321<br />
-                        <i className="fa fa-envelope"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                         No x, Nachchimar Road<br />
+		                 Thirunelvely, Jaffna<br />
+		                 Sri Lanka <br />
+                        <i className="fa fa-phone"></i>: xxxxxxxxx<br />
+                        <i className="fa fa-fax"></i>: xxxxxxxxx<br />
+                        <i className="fa fa-envelope"></i>: <a href="mailto:xxxxxxxxx@univ.jfn.ac.lk">xxxxxxxxx@univ.jfn.ac.lk</a>
                         </address>
                 </div>
                 <div className="col-12 col-sm-6 offset-sm-1">
-                    <h5>Map of our Location</h5>
+                    <h5>Map of our Location-Student Welfare Division</h5>
                 </div>
                 <div className="col-12 col-sm-11 offset-sm-1">
                     <div className="btn-group" role="group">
@@ -125,16 +125,17 @@ class Contact extends Component {
 
         
 
-<div className="row row-content">
-   <div className="col-12">
-      <h3>Send us your Feedback</h3>
-   </div>
+    <div className="row row-content">
+      <div className="col-12">
+      <h2>Inquiry Form</h2>
+      <h5>We will get in touch with you shortly</h5>
+     </div>
     <div className="col-12 col-md-9">
         <Form onSubmit={this.handleSubmit}>
 
-<FormGroup row>
-    <Label htmlFor="firstname" md={2}>First Name</Label>
-    <Col md={10}>
+   <FormGroup row>
+     <Label htmlFor="firstname" md={2}>First Name</Label>
+       <Col md={10}>
         <Input type="text" id="firstname" name="firstname"
             placeholder="First Name"
             value={this.state.firstname}
@@ -143,12 +144,12 @@ class Contact extends Component {
             onBlur={this.handleBlur('firstname')}
             onChange={this.handleInputChange} />
         <FormFeedback>{errors.firstname}</FormFeedback>
-    </Col>
-</FormGroup>
-<FormGroup row>
-    <Label htmlFor="lastname" md={2}>Last Name</Label>
-    <Col md={10}>
-        <Input type="text" id="lastname" name="lastname"
+      </Col>
+    </FormGroup>
+    <FormGroup row>
+      <Label htmlFor="lastname" md={2}>Last Name</Label>
+        <Col md={10}>
+         <Input type="text" id="lastname" name="lastname"
             placeholder="Last Name"
             value={this.state.lastname}
             valid={errors.lastname === ''}
@@ -156,34 +157,34 @@ class Contact extends Component {
             onBlur={this.handleBlur('lastname')}
             onChange={this.handleInputChange} />
         <FormFeedback>{errors.lastname}</FormFeedback>
-    </Col>
-</FormGroup>
-<FormGroup row>
-    <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
-    <Col md={10}>
-        <Input type="tel" id="telnum" name="telnum"
+        </Col>
+      </FormGroup>
+      <FormGroup row>
+       <Label htmlFor="telnum" md={2}>Contact Tel.</Label>
+         <Col md={10}>
+          <Input type="tel" id="telnum" name="telnum"
             placeholder="Tel. Number"
             value={this.state.telnum}
             valid={errors.telnum === ''}
             invalid={errors.telnum !== ''}
             onBlur={this.handleBlur('telnum')}
             onChange={this.handleInputChange} />
-        <FormFeedback>{errors.telnum}</FormFeedback>
-    </Col>
-</FormGroup>
-<FormGroup row>
-    <Label htmlFor="email" md={2}>Email</Label>
-    <Col md={10}>
-        <Input type="email" id="email" name="email"
-            placeholder="Email"
-            value={this.state.email}
-            valid={errors.email === ''}
-            invalid={errors.email !== ''}
-            onBlur={this.handleBlur('email')}
-            onChange={this.handleInputChange} />
-        <FormFeedback>{errors.email}</FormFeedback>
-    </Col>
-</FormGroup>
+           <FormFeedback>{errors.telnum}</FormFeedback>
+         </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label htmlFor="email" md={2}>Email</Label>
+           <Col md={10}>
+            <Input type="email" id="email" name="email"
+               placeholder="Email"
+               value={this.state.email}
+               valid={errors.email === ''}
+               invalid={errors.email !== ''}
+               onBlur={this.handleBlur('email')}
+               onChange={this.handleInputChange} />
+            <FormFeedback>{errors.email}</FormFeedback>
+            </Col>
+         </FormGroup>
 
 
             <FormGroup row>
@@ -208,7 +209,7 @@ class Contact extends Component {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label htmlFor="message" md={2}>Your Feedback</Label>
+                <Label htmlFor="message" md={2}>Leave Your Message</Label>
                 <Col md={10}>
                     <Input type="textarea" id="message" name="message"
                         rows="12"
@@ -219,7 +220,7 @@ class Contact extends Component {
             <FormGroup row>
                 <Col md={{size: 10, offset: 2}}>
                     <Button type="submit" color="primary">
-                        Send Feedback
+                        SUBMIT
                     </Button>
                 </Col>
             </FormGroup>
